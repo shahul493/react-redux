@@ -1,4 +1,52 @@
 /*
+return axios(url, {
+      method: 'GET',
+      mode: 'no-cors',
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+      },
+      withCredentials: true,
+      credentials: 'same-origin',
+    }).then(response => {
+    })
+*/
+
+/*
+import React, { Component } from 'react'
+import axios from 'axios'
+
+export default class User extends Component {
+  constructor(props){
+    super(props)
+
+    // axios.defaults.withCredentials = true
+
+    const config = {
+    method: 'get',
+    url: 'https://api.airbnb.com/v2/users/2917444?client_id=3092nxybyb0otqw18e8nh5nty&_format=v1_legacy_show',
+    headers: {'X-Requested-With': 'XMLHttpRequest'},
+    responseType: 'json',
+    withCredentials: true,
+  }
+
+    axios.request(config)
+      .then(response => { console.log('response: ', response) });
+
+  }
+
+  render() {
+    return (
+      <div>User</div>
+    )
+  }
+}
+/*
+
+
+
+
+/*
 const headers = new Headers();
 headers.append("Content-Type', 'application/json');
 
